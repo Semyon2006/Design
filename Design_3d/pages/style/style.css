@@ -1,0 +1,298 @@
+/*====================/index/===================*/
+
+body, html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	border: 1px solid black;
+	background: #070708;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+.logo, .header-elements, .menu {
+	padding: 5px;
+	width: 200px;
+	height: 40px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 32px;
+	font-family: Ubuntu;
+
+}
+
+.menu {
+	position: absolute;
+	right: 20px;
+	width: 50px;
+	font-size: 38px;
+	font-weight: bolder;
+	color: #c7c2ff;
+
+}
+
+.kubiki {
+	position: absolute;
+}
+
+.header-elements {
+	position: relative;
+	left: 200px;
+	font-weight: bold;
+	color: #c7c2ff;
+}
+
+.header-elements:hover {
+	background: #6e6ceb;
+	color: white;
+}
+
+.logo {
+	color: #fff;
+	cursor: default;
+}
+
+.menu:hover {
+	color: #1d19fc;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: url(image/background/bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation: changing 30s infinite;
+}
+
+.previu {
+	background: rgba(0,0,0,0.75);
+	width: 100%;
+	height: 55%;
+	position: absolute;
+	top: 180px;
+	color: #fff;
+	justify-content: center;
+}
+
+.logo-content-head {
+	font-family: Ubuntu;
+	font-size: 52px;
+	font-weight: bold;
+}
+
+.logo-content-paragraph {
+	font-family: Ubuntu;
+	font-size: 42px;
+	font-weight: bold;
+}
+
+@keyframes changing {
+	0% {
+		background-image:url(image/background/bg2.jpg);
+	}
+
+	33% {
+		background-image:url(image/background/bg3.jpg);
+	}
+
+	66% {
+		background-image:url(image/background/bg5.jpg);
+	}
+
+}
+
+
+
+/*===================/store/====================*/
+
+@font-face {
+	font-family: Tonkiy;
+	scr: local('Tonkiy'), 
+	url('fonts/Cruinn Black.ttf');
+}
+
+.appblock {
+	background-color: none;
+	width: 1300px;
+	height: 1000px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+.cardbuy1, .cardbuy2, .cardbuy3, .cardbuy4 {
+	width: 370px;
+	height: 400px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 20px;
+	justify-content: center;
+	left: 20px;
+	top: 20px;
+	position: relative;
+	background: #fff;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-shadow: 0px 15px 23px 2px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 15px 23px 2px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 15px 23px 2px rgba(34, 60, 80, 0.2);
+}
+
+.cardimg1, .cardimg2, .cardimg3, .cardimg4 {
+	width: 320px;
+	height: 240px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 25px;
+}
+
+.cardimg1 img, .cardimg2 img, .cardimg3 img, .cardimg4 img {
+	width: 320px;
+	height: 240px;
+}
+
+.cardtxt1, .cardtxt2, .cardtxt3, .cardtxt4 {
+	width: 320px;
+	height: 40px;
+	border: none;
+	position: relative;
+	top: 5%;
+	font-family: Ubuntu;
+}
+
+.cardprice1, .cardprice2, .cardprice3, .cardprice4 {
+	width: 170px;
+	height: 50px;
+	position: relative;
+	top: 10%;
+	font-family: Ubuntu;
+	font-size: 42px;
+}
+
+.price {
+	margin-top: 0px;
+	margin-left: 12px;
+	font-weight: ;
+}
+
+.price1 {
+	font-size: 15px;
+	margin-bottom: 50px;
+}
+
+.buybutton1, .buybutton2, .buybutton3, .buybutton4 {
+	height: 50px;
+	width: 130px;
+	position: absolute;
+	right: 0px;
+	top: 310px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	background: #fff;
+	font-family: Ubuntu;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.buybutton1:active {
+	transform: scale(0.95);
+}
+
+.buybutton2:active {
+	transform: scale(0.95);
+}
+
+.buybutton3:active {
+	transform: scale(0.95);
+}
+
+.buybutton4:active {
+	transform: scale(0.95);
+}
+
+.text {
+	color: #032D35;
+	position: absolute;
+	top: 0px;
+	margin-top: 2%;
+	margin-left: 5%;
+	font-weight: bold;
+	font-family: Ubuntu;
+	font-size: 25px;
+}
+
+
+
+/*===================/author/=====================*/
+
+.CardAuthor {
+	color: #fff;
+	background: ;
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 100%;
+	height: 140px;
+	position: relative;
+	top: 40px;
+
+}
+
+.headPageLeft {
+	color: #fff;
+	background: ;
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 300px;
+	height: 150px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	display: inline-block;
+}
+
+.headPageRight {
+	color: #fff;
+	background: ;
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 400px;
+	height: 150px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	display: inline-block;
+}
